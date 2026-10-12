@@ -1,0 +1,79 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution & packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Model checkpoints & heavy weights
+*.h5
+*.keras
+*.hdf5
+*.pkl
+*.pt
+*.pth
+*.onnx
+saved_model/
+checkpoints/
+!models/README.md
+
+# TensorBoard logs
+log/
+logs/
+
+# Datasets and Archives (protect against accidental repository bloat)
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/README.md
+data/external/*
+!data/external/.gitkeep
+!data/external/README.md
+Sarcasm_Headlines_Dataset*.json
+glove.*
+*.csv
+*.zip
+*.tar.gz
+*.7z
+*.rar
+
+# Text files
+*.txt
+!requirements.txt
+!data/external/.gitkeep
+
+# Machine-readable results allowed
+!results/metrics.json
+
+# Secrets, Credentials & OS files
+*.key
+*.pem
+secrets.json
+credentials.json
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
