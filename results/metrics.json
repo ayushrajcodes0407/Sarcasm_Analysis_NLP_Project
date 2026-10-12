@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "status": "HISTORICAL_BASELINE_ONLY",
+    "notice": "End-to-end retraining is BLOCKED pending raw dataset acquisition (Sarcasm_Headlines_Dataset.json). These metrics reflect the original historical Google Colab execution.",
+    "dataset_name": "News Headlines Dataset for Sarcasm Detection (v1)",
+    "source_reference": "Misra & Arora (2019), arXiv:1908.07414",
+    "sample_counts": {
+      "total_samples": 26709,
+      "train_val_samples": 21367,
+      "test_samples": 5342,
+      "test_class_0_non_sarcastic": 2972,
+      "test_class_1_sarcastic": 2370
+    },
+    "random_seed": 42
+  },
+  "historical_bilstm_metrics": {
+    "evaluation_split": "Held-out Test Split (5,342 samples)",
+    "overall_accuracy": 0.8562,
+    "class_0_non_sarcastic": {
+      "precision": 0.87,
+      "recall": 0.88,
+      "f1_score": 0.88,
+      "support": 2972
+    },
+    "class_1_sarcastic": {
+      "precision": 0.85,
+      "recall": 0.84,
+      "f1_score": 0.84,
+      "support": 2370
+    },
+    "macro_avg_f1": 0.86,
+    "weighted_avg_f1": 0.86,
+    "audit_note": "Original notebook inverted precision/recall in printed text due to classification_report(y_pred, y_test). True metric values are reconciled here."
+  }
+}
